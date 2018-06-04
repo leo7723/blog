@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% load custom_markdown %}
+
+{% block content %}
+    <div class="starter-template" >
+
+
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.timestamp }}</p>
+            <p>{{ post.body|custom_markdown }}</p>
+
+
+      </div>
+{% endblock %}
